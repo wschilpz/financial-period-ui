@@ -2,7 +2,7 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "Usefull Services UI",
+    "name": "nodejs-example",
     "annotations": {
       "openshift.io/display-name": "Node.js",
       "description": "An example Node.js application with no database. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/nodejs-ex/blob/master/README.md.",
@@ -154,7 +154,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "financial-period-ui"
+                "nodejs-example"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -180,7 +180,7 @@
           "spec": {
             "containers": [
               {
-                "name": "financial-period-ui",
+                "name": "nodejs-example",
                 "image": " ",
                 "ports": [
                   {
