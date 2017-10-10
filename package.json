@@ -6,7 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    //"test": "ng test",
+    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -21,6 +22,8 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
